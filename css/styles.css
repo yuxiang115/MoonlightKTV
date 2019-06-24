@@ -1,0 +1,237 @@
+body{
+	background-color: #222831;
+}
+
+
+/*************Header******************/
+#header-nav{
+	background-color: #e3207b;
+	border: 0;
+	border-radius: 0;
+}
+
+
+#logo-img{
+	background: url("../images/KTV-logo-md.png") no-repeat;
+	width: 300px;
+	height: 108px;
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand h1{
+	font-family: 'Lora', serif;
+	color: #f6b319;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #222831;
+}
+
+#collapsable-nav{
+	margin-top: 60px;
+}
+
+#nav-list a{
+	color: white;
+	font-size: 1.7em;
+	font-weight: 100;
+	padding-left: 50px;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background-color: #222831;
+}
+/*************End of Header******************/
+
+/*************Main contain******************/
+#call-btn{
+	background-color: #e3207b;
+	height: 50px;
+	border: white solid 2px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 10px;
+}
+
+#call-btn #btn{
+	position: relative;
+	top: 8px;
+	font-size: 1.7em;
+	color: #222831;
+}
+
+.container .jumbotron{
+	box-shadow: 0 0 50px #3F0C1F;
+	border: 2px solid #3F0C1F;
+}
+
+#room-price-tile, #menu-tile, #map-tile{
+	width: 100%;
+	height: 250px;
+	border: 2px solid #3F0C1F;
+	position: relative;
+	overflow: hidden;
+}
+
+#room-price-tile{
+	background: url("../images/room.jpg") no-repeat;
+	background-position: center;
+	border-radius: 10px;
+}
+
+#menu-tile{
+	background: url("../images/menu.jpg") no-repeat;
+	background-position: center;
+	border-radius: 10px;
+}
+
+#map-tile{
+	border-radius: 10px;
+}
+
+#room-price-tile:hover, #menu-tile:hover, #map-tile:hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#room-price-tile span, #menu-tile span, #map-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	opacity: .8;
+}
+
+/*************End of Main contain******************/
+
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer #copyright{
+	color: white;
+}
+
+/*****large device*****/
+@media(min-width: 1200px){
+	.container .jumbotron{
+		background: url("../images/jumbotron-lg.png") no-repeat;
+		height: 678px;
+	}
+}
+
+/*****media device*****/
+@media (min-width: 992px) and (max-width: 1199px){
+	#nav-list a{
+		padding-left: 50px;
+		bottom: 50px;
+	}
+	#collapsable-nav{
+		margin-top: 0px;
+	}
+
+	#header-nav.navbar, #header-nav.navbar-default{
+		height: 110px;
+	}
+
+	.container .jumbotron{
+		background: url("../images/jumbotron-md.png") no-repeat;
+		height: 558px;
+	}
+}
+
+/*****small device*****/
+@media (min-width: 768px) and (max-width: 991px){
+	#nav-list a{
+		padding-left: 3vw;
+		bottom: 50px;
+		right: -100px;
+
+	}
+	#collapsable-nav{
+		margin-top: 0px;
+	}
+	#navbar-header{
+		margin-top: 100px;
+	}
+	#header-nav.navbar, #header-nav.navbar-default{
+		height: 110px;
+	}
+
+	.container .jumbotron{
+		background: url("../images/jumbotron-sm.png") no-repeat;
+		height: 432px;
+	}
+
+	#map-tile{
+		margin-top: 20px;
+	}
+
+	#room-price-tile #menu-tile{
+		width: 360px;
+		margin: 0 auto 15px;
+	}
+}
+
+/*****extra small device*****/
+@media(max-width: 767px){
+	.navbar-brand{
+		font-size: 5vw;
+		margin-bottom: 4vw;
+	}
+
+	.navbar-header button.navbar-toggle{
+		margin-top: 3.5vw;
+	}
+
+	.container .jumbotron{
+		margin-top: 20px;
+		padding: 0;
+	}
+
+	#room-price-tile #menu-tile{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+
+
+
+}
+
+
+/***************Super small device**********************/
+@media (max-width: 479px){
+	/*Header*/
+	.navbar-brand h1{
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	/*Home Page*/
+	#menu-tile, #room-price-tile{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+
+}
