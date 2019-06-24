@@ -54,6 +54,7 @@ body{
 }
 
 
+
 /*************End of Header******************/
 
 /*************Main contain******************/
@@ -105,6 +106,16 @@ body{
 #room-price-tile:hover, #menu-tile:hover, #map-tile:hover{
 	box-shadow: 0 1px 5px 1px #cccccc;
 }
+
+#menu-tile, #room-price-tile, #map-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #3F0C1F;
+	overflow: hidden;
+}
+
 
 #room-price-tile span, #menu-tile span, #map-tile span{
 	position: absolute;
@@ -201,10 +212,8 @@ body{
 		margin-top: 20px;
 	}
 
-	#room-price-tile #menu-tile{
-		width: 360px;
-		margin: 0 auto 15px;
-	}
+
+
 }
 
 /*****extra small device*****/
@@ -223,10 +232,7 @@ body{
 		padding: 0;
 	}
 
-	#room-price-tile #menu-tile{
-		width: 280px;
-		margin: 0 auto 15px;
-	}
+
 
 	/***Footer***/
 	.panel-footer section{
@@ -248,6 +254,11 @@ body{
 
 	#address{
 		text-align: center;
+	}
+
+	#menu-tile, #room-price-tile{
+		width: 320px;
+		margin: 0 auto 15px;
 	}
 
 }
