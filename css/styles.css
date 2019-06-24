@@ -53,9 +53,7 @@ body{
 	text-align: center;
 }
 
-#nav-list a:hover{
-	background-color: #222831;
-}
+
 /*************End of Header******************/
 
 /*************Main contain******************/
@@ -112,6 +110,7 @@ body{
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	color:#e3207b;
 	width: 100%;
 	text-align: center;
 	font-size: 1.6em;
@@ -132,6 +131,20 @@ body{
 
 .panel-footer #copyright{
 	color: white;
+	margin-top: 40px;
+}
+
+#hours, #address{
+	line-height: 2;
+	color: white;
+}
+
+#address{
+	text-align: right;
+}
+
+#hours > span, #address > span{
+	font-size: 1.3em;
 }
 
 /*****large device*****/
@@ -167,15 +180,14 @@ body{
 	#nav-list a{
 		padding-left: 3vw;
 		bottom: 50px;
-		right: -100px;
+		right: -4vw;
 
 	}
 	#collapsable-nav{
 		margin-top: 0px;
 	}
 	#navbar-header{
-		margin-top: 100px;
-	}
+		margin-top: 100px4	}
 	#header-nav.navbar, #header-nav.navbar-default{
 		height: 110px;
 	}
@@ -216,7 +228,23 @@ body{
 		margin: 0 auto 15px;
 	}
 
+	/***Footer***/
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
 
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+
+	.panel-footer section hr{
+		width: 50%;
+	}
+
+	.panel-footer #copyright{
+		margin-top: 0px;
+	}
 
 }
 
@@ -232,6 +260,10 @@ body{
 	#menu-tile, #room-price-tile{
 		width: 280px;
 		margin: 0 auto 15px;
+	}
+
+	.panel-footer #copyright{
+		margin-top: 0px;
 	}
 
 }
